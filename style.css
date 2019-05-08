@@ -1,0 +1,134 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  color: white;
+  margin: 0px auto;
+  height: 99vh;
+  background-color: #674baf;
+  background-image: url("../images/bg-desktop.svg");
+  background-repeat: no-repeat;
+}
+
+#logo {
+  width: 10rem;
+  padding-bottom: 3.1rem;
+  padding-left: 1.5rem;
+  padding-top: 1.8rem;
+}
+#logo img {
+  width: 10rem;
+}
+
+#center {
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+}
+#center img {
+  width: 85%;
+}
+#center #content {
+  text-align: center;
+}
+#center #content p {
+  font-size: 0.9em;
+  font-weight: 300;
+  margin: 0em 2.7rem 1.7rem 2.7rem;
+}
+#center #content h1,
+#center #content h2,
+#center #content h3,
+#center #content h4,
+#center #content h5,
+#center #content h6 {
+  font-family: "Poppins", sans-serif;
+  margin-left: 2.2em;
+  margin-right: 2.2em;
+  font-size: 1.3em;
+  font-weight: 400;
+}
+#center #content button {
+  color: #674baf;
+  border-radius: 25px;
+  width: 55%;
+  height: 3em;
+  font-size: 0.7em;
+  background-color: white;
+  box-shadow: 2px 3px 7px -2px #343434;
+  border-width: 0;
+}
+
+#social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3.5em;
+  margin-bottom: 2.5em;
+}
+#social button {
+  color: white;
+  font-weight: normal;
+  margin: 0.5em;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  border: 1px solid white;
+  background-color: transparent;
+}
+
+@media only screen and (min-width: 960px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #logo {
+    padding-top: 0px;
+    padding-left: 4rem;
+  }
+
+  #center {
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0px auto;
+  }
+  #center img {
+    width: 50vw;
+  }
+  #center #content {
+    text-align: start;
+    margin-top: 3.5rem;
+    width: 42vw;
+  }
+  #center #content h1,
+#center #content h2,
+#center #content h3,
+#center #content h4,
+#center #content h5,
+#center #content h6 {
+    margin-left: 2.3rem;
+    margin-right: 0rem;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  #center #content p {
+    font-size: 1rem;
+    margin-left: 2.3rem;
+  }
+  #center #content button {
+    width: 25%;
+    margin-left: 2.3rem;
+  }
+
+  #social {
+    justify-content: flex-end;
+    margin-top: -2rem;
+    margin-right: 8rem;
+  }
+}
